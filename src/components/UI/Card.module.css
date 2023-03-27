@@ -1,11 +1,11 @@
 .card {
     overflow: hidden;
+    width: 80%;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: rgb(231, 228, 228);
-    margin: 1rem;
   }
   
   .card:hover {

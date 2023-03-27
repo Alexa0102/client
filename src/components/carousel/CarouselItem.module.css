@@ -1,34 +1,35 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 21rem));
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
     gap: 2rem;
     justify-content: center;
-  }
-  
-  .image {
+}
+
+.image {
     width: 100%;
     display: flex;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     background-color: #fff;
-  }
-  
-  .image img {
+}
+
+.image img {
     width: 100%;
     height: 12rem;
     overflow: hidden;
-    object-fit: cover;
-  }
-  
-  .content {
+    object-fit: contain;
+}
+
+.content {
     text-align: left;
     padding: 1rem;
-  }
-  
-  .content h3 {
+}
+
+.content h3 {
     margin: -2px;
     font-size: 1.55rem;
     color: #2c292b;
-  }
-  
+}

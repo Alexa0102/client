@@ -1,24 +1,29 @@
-import React from 'react'
-import classes from './Carousel.module.css'
+import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import { FreeMode, Pagination } from "swiper";
+import { Navigation } from "swiper";
 import CarouselItem from './CarouselItem';
+import hermes from '../../hermes.png';
+import prada from '../../prada.png';
+import celine from '../../celine.png';
+import lv from '../../LV.png';
+
 //DUMMY_DATA Тук
 const DUMMY_DATA = [
     {
       id: "prada",
       image:
-        "https://aretrotale.com/wp-content/uploads/2022/01/2-97.jpg",
+        prada,
       name: "Prada",
     },
     {
       id: "celine",
       image:
-        "https://cdn.shopify.com/s/files/1/0248/6799/products/Celine_Black_Leather_Gold_Ring_Bag_1_of_8_1024x1024.jpg?v=1463443594",
+        celine,
       name: "Celine",
     },
     {
@@ -30,13 +35,13 @@ const DUMMY_DATA = [
     {
       id: "hermes",
       image:
-        "https://cdn.shopify.com/s/files/1/0225/2478/8810/products/148296-50BRKNVYGE-Hermes-50cm-birkin-voyage-bag-tan-1.jpg?v=1668622219",
+       hermes,
       name: "Hermes",
     },
     {
       id: "louis vuitton",
       image:
-        "https://cdn.shopify.com/s/files/1/0559/1718/3023/products/kjihugv.jpg?v=1653066606",
+        lv,
       name: "Louis Vuitton",
     },
     {
@@ -52,43 +57,41 @@ const DUMMY_DATA = [
       name: "Dolce & Gabbana",
     },
     {
-      id: "balmain",
+      id: "fendy",
       image:
         "https://aretrotale.com/wp-content/uploads/2022/06/1-1-47.jpg",
-      name: "Balmain",
+      name: "Fendy",
     },
   ];
+
+
 const Carousel = () => {
-
-
     return (
     <>
 
     <Swiper
-      slidesPerView={5}
-      spaceBetween={5}
+      navigation={true}
+      slidesPerView={3}
+      spaceBetween={3}
       freeMode={true}
       pagination={{
-        clickable: true,
+        clickable: false,
       }}
-      modules={[FreeMode, Pagination]}
+      modules={[Navigation]}
       className="mySwiper"
     >
-      <SwiperSlide>
-        {/* ТУК МАПВАШ DUMMY_DATA И НА КОМПОНЕНТА ЗАДАВАШ ДАННИТЕ */}
+      
         {DUMMY_DATA.map((bag) => (
-          <CarouselItem image={bag.image} name={bag.name} id={bag.id} />
+            <SwiperSlide>
+                <div style={{display: "flex", justifyContent: "center", marginBottom: "5rem"}}>
+                    <CarouselItem image={bag.image} name={bag.name} id={bag.id} />
+                </div>
+            </SwiperSlide>
         ))}
-      </SwiperSlide>
-     
+
     </Swiper>
   </>
   )
 }
-
-
-
-
-
 
 export default Carousel

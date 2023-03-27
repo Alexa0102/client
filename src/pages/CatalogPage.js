@@ -1,9 +1,10 @@
 import React from 'react'
+import Carousel from '../components/carousel/Carousel'
 
 const CatalogPage = () => {
   return (
     <div>
-      Catalog
+      <Carousel/>
     </div>
   )
 }

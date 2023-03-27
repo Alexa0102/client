@@ -6,7 +6,7 @@
     padding: 2rem;
     align-items: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-bg {
@@ -19,17 +19,19 @@
     gap: 1.5rem;
     float: right;
 }
-.nav-menu a{
+
+.nav-menu a {
     text-decoration: none;
     color: #fff;
 }
 
-.nav-menu a:hover{
+.nav-menu a:hover {
     color: #dedabd;
 }
+
 .nav-menu a:active,
-.nav-menu a.active{
-    color:  #e3c4a8;  
+.nav-menu a.active {
+    color: rgb(227, 196, 168);
 }
 
 li {
