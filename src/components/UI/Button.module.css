@@ -8,6 +8,8 @@
     padding: 0.5rem 2rem;
     border-radius: 10px;
     display: flex;
+    text-decoration: none;
+
   }
 
   .button-wrap {

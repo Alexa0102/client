@@ -6,11 +6,14 @@ import { Switch, Redirect, Route } from 'react-router-dom';
 import CatalogPage from './pages/CatalogPage';
 import HomePage from './pages/HomePage';
 import BrandsPage from './pages/BrandsPage';
+import DetailsPage from './pages/DetailsPage';
+import ScrollToTop from './components/UI/ScrollToTop';
 // //import Login from './components/login/Login';
 
 function App() {
   return (
     <Layout>
+      <ScrollToTop/>
       <Switch>
           <Route path="/" exact>
             <Redirect to="/home" />
@@ -18,8 +21,11 @@ function App() {
           <Route path="/home">
             <HomePage />
           </Route>
-          <Route path="/catalog">
+          <Route path="/catalog" exact>
             <CatalogPage/>
+          </Route>
+          <Route path="/catalog/:bagId">
+            <DetailsPage />
           </Route>
           <Route path="/brands">
             <BrandsPage/>

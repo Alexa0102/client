@@ -12,7 +12,7 @@ function Navbar() {
     return (
             <nav className={nav ? 'navbar navbar-bg' : 'navbar'}>
                 <div className={nav ? 'logo dark' : 'logo'}>
-                    <h2>SECOND CHANCE.</h2>
+                   <NavLink to='/home' style={{ textDecoration:"none"}}><h2>SECOND CHANCE.</h2></NavLink>
                 </div>
 
                 <ul className="nav-menu">

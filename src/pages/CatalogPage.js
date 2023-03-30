@@ -1,10 +1,10 @@
 import React from 'react'
-import Carousel from '../components/carousel/Carousel'
+import Catalog from '../components/catalog/Catalog'
 
 const CatalogPage = () => {
   return (
     <div>
-      <Carousel/>
+      <Catalog/>
     </div>
   )
 }
