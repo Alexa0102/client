@@ -2,6 +2,10 @@ import hermes from '../../src/hermes.png';
 import prada from '../../src/prada.png';
 import celine from '../../src/celine.png';
 import lv from '../../src/LV.png';
+import gucci from '../../src/gucci.png';
+import chanel from '../../src/chanel.png';
+import dg from '../../src/d&g.png';
+import fendi from '../../src/fendi.png';
 
 
 const DUMMY_DATA = [
@@ -26,7 +30,7 @@ const DUMMY_DATA = [
     {
       id: "gucci",
       image:
-        "https://i.pinimg.com/474x/c0/0d/7c/c00d7c6e9fdc57fdf72cf268cdcbb511.jpg",
+        gucci,
       name: "Gucci",
       year:"1998",
       color:"beige",
@@ -53,7 +57,7 @@ const DUMMY_DATA = [
     {
       id: "chanel",
       image:
-        "https://sothebys-com.brightspotcdn.com/a6/dc/3e834869492aa1c0155b004091eb/vintage-chanel-tote.jfif",
+        chanel,
       name: "Chanel",
       year:"1998",
       color:"black",
@@ -62,7 +66,7 @@ const DUMMY_DATA = [
     {
       id: "dolce&gabbana",
       image:
-        "https://a.1stdibscdn.com/dolce-gabbana-burgundy-signature-fabric-and-leather-d-ring-baguette-bag-for-sale-picture-10/v_13101/v_154547521650058037459/luxury_women_dolcegabbana_used_handbags_p510260_007_master.jpg?width=768",
+        dg,
       name: "Dolce & Gabbana",
       year:"1998",
       color:"beige",
@@ -71,7 +75,7 @@ const DUMMY_DATA = [
     {
       id: "fendi",
       image:
-        "https://aretrotale.com/wp-content/uploads/2022/06/1-1-47.jpg",
+        fendi,
       name: "Fendi",
       year:"1998",
       color:"brown",
