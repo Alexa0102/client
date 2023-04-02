@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { BiSearch } from 'react-icons/bi'
+
 
 import { NavLink } from 'react-router-dom'
+import SearchBar from '../search/Search'
 
 import './NavbarStyles.css'
 
@@ -19,7 +20,7 @@ function Navbar() {
                     <NavLink activeClassName='active' to='/home' >Home</NavLink>
                     <NavLink activeClassName='active' to='/catalog' >Catalog</NavLink>
                     <NavLink activeClassName='active' to='/brands' >Brands</NavLink>
-                    <BiSearch className='icon' />
+                    <SearchBar/>
                 </ul>
             </nav>
     )
