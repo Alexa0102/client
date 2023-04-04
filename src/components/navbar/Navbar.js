@@ -1,29 +1,36 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import DUMMY_DATA from "../../util/dummyData";
 
+import { NavLink } from "react-router-dom";
+import SearchBar from "../search/Search";
 
-import { NavLink } from 'react-router-dom'
-import SearchBar from '../search/Search'
-
-import './NavbarStyles.css'
+import "./NavbarStyles.css";
 
 function Navbar() {
-    const [nav] = useState(false)
-    // const handleNav = () => setNav(!nav)
+  // const handleNav = () => setNav(!nav)
 
-    return (
-            <nav className={nav ? 'navbar navbar-bg' : 'navbar'}>
-                <div className={nav ? 'logo dark' : 'logo'}>
-                   <NavLink to='/home' style={{ textDecoration:"none"}}><h2>SECOND CHANCE.</h2></NavLink>
-                </div>
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <NavLink to="/home" style={{ textDecoration: "none" }}>
+          <h2>SECOND CHANCE.</h2>
+        </NavLink>
+      </div>
 
-                <ul className="nav-menu">
-                    <NavLink activeClassName='active' to='/home' >Home</NavLink>
-                    <NavLink activeClassName='active' to='/catalog' >Catalog</NavLink>
-                    <NavLink activeClassName='active' to='/brands' >Brands</NavLink>
-                    <SearchBar/>
-                </ul>
-            </nav>
-    )
+      <ul className="nav-menu">
+        <NavLink activeClassName="active" to="/home">
+          Home
+        </NavLink>
+        <NavLink activeClassName="active" to="/catalog">
+          Catalog
+        </NavLink>
+        <NavLink activeClassName="active" to="/brands">
+          Brands
+        </NavLink>
+        <SearchBar data={DUMMY_DATA} />    
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

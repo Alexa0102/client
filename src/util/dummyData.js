@@ -70,7 +70,7 @@ const DUMMY_DATA = [
 
     },
     {
-      id: "louisvuitton",
+      id: "louis vuitton",
       image:
         lv,
       name: "Louis Vuitton",
@@ -95,7 +95,7 @@ const DUMMY_DATA = [
       chanelLogo
     },
     {
-      id: "dolce&gabbana",
+      id: "dolce & gabbana",
       image:
         dg,
       name: "Dolce & Gabbana",
