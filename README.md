@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+SECOND CHANCE.
+
+Simple React app for reviewing designer bags. It has a Home page with Navigation bar(Home, Catalog, Brands and Search bar). On the Home page can be seen Carousel with dummy data and by clicking you are redirected to the Details page of the selected item using React router dom. Catalog page contains of all the dummy data each in a Card component placed in separate rows. The Search bar has a filter and also is used useState for dynamic typing.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
